@@ -92,6 +92,20 @@
     "description": "关于 TravelKang 的新闻、资源和更新",
     "read_more_text": "阅读更多"
   },
+  "payment": {
+    "success": {
+      "title": "支付成功",
+      "description": "您的支付已成功处理"
+    },
+    "failed": {
+      "title": "支付失败",
+      "description": "您的支付无法处理"
+    },
+    "processing": {
+      "title": "处理支付中",
+      "description": "请稍候，我们正在处理您的支付"
+    }
+  },
   "my_invites": {
     "title": "我的邀请",
     "description": "查看您的邀请记录",

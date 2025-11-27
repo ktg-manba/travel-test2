@@ -91,6 +91,20 @@
     "description": "News, resources, and updates about ShipAny",
     "read_more_text": "Read More"
   },
+  "payment": {
+    "success": {
+      "title": "Payment Successful",
+      "description": "Your payment has been processed successfully"
+    },
+    "failed": {
+      "title": "Payment Failed",
+      "description": "Your payment could not be processed"
+    },
+    "processing": {
+      "title": "Processing Payment",
+      "description": "Please wait while we process your payment"
+    }
+  },
   "my_invites": {
     "title": "My Invites",
     "description": "View your invite records",
