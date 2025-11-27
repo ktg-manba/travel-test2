@@ -1,0 +1,666 @@
+{
+  "template": "travelkang-template",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "TravelKang",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "TravelKang"
+      },
+      "url": "/zh"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "功能特点",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "定价",
+          "url": "/#pricing",
+          "icon": "MdPayment"
+        },
+        {
+          "title": "服务",
+          "url": "/products",
+          "icon": "BiCube"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "立即开始",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "您的中国旅游完整指南",
+    "highlight_text": "TravelKang",
+    "description": "TravelKang 帮助国际游客自信地探索中国。<br/>提供支付指南、城市旅游攻略和24/7 AI旅游助手。",
+    "announcement": {
+      "label": "2025",
+      "title": "🎉 欢迎来到中国",
+      "url": "/#pricing"
+    },
+    "tip": "🎁 限时特惠 - 立即开始",
+    "buttons": [
+      {
+        "title": "立即开始",
+        "icon": "RiFlashlightFill",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "查看服务",
+        "icon": "RiMapPinLine",
+        "url": "/products",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "受到全球旅行者信赖",
+    "items": [
+      {
+        "title": "安全支付",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "安全支付"
+        }
+      },
+      {
+        "title": "24/7 支持",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "24/7 支持"
+        }
+      },
+      {
+        "title": "专业指南",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "专业指南"
+        }
+      },
+      {
+        "title": "AI 助手",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "AI 助手"
+        }
+      },
+      {
+        "title": "多语言",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "多语言"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "什么是 TravelKang",
+    "label": "介绍",
+    "description": "TravelKang 是您探索中国的完整旅游伴侣。我们提供详细的指南和AI驱动的助手，让您的旅程顺利愉快。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "支付设置指南",
+        "description": "逐步指南教您设置支付宝和微信支付，让在中国付款变得轻松简单。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "城市旅游攻略",
+        "description": "涵盖中国主要城市的全面旅游攻略，包含内行建议和推荐。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "AI 旅游助手",
+        "description": "通过我们的24/7 AI聊天机器人即时获得旅游问题的答案。",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么选择 TravelKang",
+    "label": "优势",
+    "description": "您在中国顺利愉快旅行所需的一切 - 从支付设置到本地洞察。",
+    "items": [
+      {
+        "title": "轻松设置支付",
+        "description": "详细指南帮助您快速设置支付宝和微信支付，让您像本地人一样付款。",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "全面的城市指南",
+        "description": "获取主要城市的内行知识 - 景点、美食、交通和文化提示。",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "24/7 AI 支持",
+        "description": "随时询问关于中国旅游的任何问题，随时随地获得即时、准确的答案。",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "TravelKang 如何使用",
+    "description": "通过三个简单步骤开始您的中国之旅：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "选择您的套餐",
+        "description": "选择适合您需求的PDF指南套装、聊天机器人访问或高级套餐。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "下载指南",
+        "description": "立即获取支付设置指南和全面的城市旅游攻略。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "随时提问",
+        "description": "使用我们的AI旅游助手获取关于交通、美食、文化等问题的答案。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "享受您的旅程",
+        "description": "自信地旅行，所有需要的信息和支持都在您的指尖。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "TravelKang 核心功能",
+    "description": "您自信轻松探索中国所需的一切。",
+    "items": [
+      {
+        "title": "支付设置指南",
+        "description": "详细的PDF指南，逐步教您如何设置支付宝和微信支付。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "城市旅游攻略",
+        "description": "涵盖主要城市的全面指南，包含景点、美食推荐和本地提示。",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "AI 旅游助手",
+        "description": "24/7聊天机器人，回答您关于交通、文化、美食等的问题。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "多语言支持",
+        "description": "提供多种语言，服务来自世界各地的旅行者。",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "定期更新",
+        "description": "我们的指南定期更新最新信息和旅游提示。",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "移动友好",
+        "description": "从任何设备访问指南和聊天机器人，无论您在中国哪里。",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "我们涵盖的热门目的地",
+    "description": "使用我们的详细指南探索中国最令人惊叹的城市。",
+    "items": [
+      {
+        "title": "北京",
+        "description": "首都指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "上海",
+        "description": "现代都市指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "广州",
+        "description": "南方明珠指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "深圳",
+        "description": "科技中心指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "成都",
+        "description": "熊猫之都指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "西安",
+        "description": "古都指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/4.png"
+        }
+      },
+      {
+        "title": "杭州",
+        "description": "天堂之城指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/6.png"
+        }
+      },
+      {
+        "title": "南京",
+        "description": "历史名城指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/8.png"
+        }
+      },
+      {
+        "title": "苏州",
+        "description": "园林之城指南",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/9.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "统计",
+    "title": "旅行者喜爱 TravelKang",
+    "description": "让中国旅游变得轻松愉快。",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "受到",
+        "label": "1万+",
+        "description": "旅行者信赖"
+      },
+      {
+        "title": "涵盖",
+        "label": "50+",
+        "description": "城市"
+      },
+      {
+        "title": "支持",
+        "label": "10+",
+        "description": "种语言"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "定价",
+    "title": "选择您的旅游套餐",
+    "description": "选择适合您中国旅游需求的完美套餐。",
+    "groups": [],
+    "items": [
+      {
+        "title": "PDF 指南套装",
+        "description": "获取支付设置指南和城市旅游攻略",
+        "features_title": "包含",
+        "features": [
+          "支付设置指南（支付宝和微信支付）",
+          "城市旅游攻略（所有主要城市）",
+          "终身访问更新",
+          "移动友好的PDF格式",
+          "随时随地下载"
+        ],
+        "interval": "one-time",
+        "amount": 2900,
+        "cn_amount": 19900,
+        "currency": "USD",
+        "price": "$29",
+        "unit": "",
+        "is_featured": false,
+        "tip": "一次性付费，终身访问",
+        "button": {
+          "title": "购买 PDF 套装",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "pdf_bundle",
+        "product_name": "TravelKang PDF 指南套装",
+        "credits": 0,
+        "valid_months": 12
+      },
+      {
+        "title": "聊天机器人访问",
+        "description": "无限访问旅游助手聊天机器人",
+        "label": "热门",
+        "features_title": "包含",
+        "features": [
+          "24/7 旅游助手",
+          "即时回答旅游问题",
+          "个性化旅游推荐",
+          "多语言支持",
+          "随时取消"
+        ],
+        "interval": "month",
+        "amount": 1900,
+        "cn_amount": 12900,
+        "currency": "USD",
+        "price": "$19",
+        "unit": "/月",
+        "is_featured": true,
+        "tip": "月度订阅，随时取消",
+        "button": {
+          "title": "购买聊天机器人访问",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "chatbot_access",
+        "product_name": "TravelKang 聊天机器人访问",
+        "credits": 0,
+        "valid_months": 1
+      },
+      {
+        "title": "高级套餐",
+        "description": "包含所有内容：PDF 指南 + 聊天机器人访问",
+        "features_title": "包含",
+        "features": [
+          "所有 PDF 指南（支付 + 城市）",
+          "1 个月聊天机器人访问",
+          "优先支持",
+          "新指南优先访问",
+          "最佳价值 - 节省 $9"
+        ],
+        "interval": "one-time",
+        "amount": 3900,
+        "cn_amount": 29900,
+        "currency": "USD",
+        "price": "$39",
+        "unit": "",
+        "is_featured": false,
+        "tip": "最佳价值 - 节省 $9",
+        "button": {
+          "title": "购买高级套餐",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "TravelKang 高级套餐",
+        "credits": 0,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "用户评价",
+    "title": "旅行者如何评价 TravelKang",
+    "description": "听听使用 TravelKang 探索中国的国际旅行者怎么说。",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Sarah Johnson",
+        "label": "来自美国的旅行者",
+        "description": "TravelKang的支付指南真是救星！我几分钟就设置好了支付宝，到处都能付款。城市指南帮我发现了北京的一些隐藏宝藏，否则我永远找不到。",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Michael Chen",
+        "label": "来自澳大利亚的旅行者",
+        "description": "AI聊天机器人即时回答了我所有问题 - 从火车时刻表到餐厅推荐。感觉就像口袋里有个24/7的本地向导！",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Emma Williams",
+        "label": "来自英国的旅行者",
+        "description": "作为独自旅行的女性，我对访问中国感到紧张。TravelKang的全面指南给了我独立探索的信心。强烈推荐！",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "David Kim",
+        "label": "来自加拿大的旅行者",
+        "description": "城市指南非常详细 - 涵盖了从必看景点到本地美食推荐的一切。物超所值！",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "Lisa Anderson",
+        "label": "来自德国的旅行者",
+        "description": "TravelKang让我3周的中国之旅变得轻松多了。支付设置很简单，聊天机器人帮我轻松导航交通系统。",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "James Taylor",
+        "label": "来自法国的旅行者",
+        "description": "这是我做过的最好的旅游投资！指南写得很好且最新。AI助手为我节省了几个小时的研究时间。非常适合首次访问中国的游客。",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "关于 TravelKang 的常见问题",
+    "description": "还有其他问题？请通过电子邮件联系我们。",
+    "items": [
+      {
+        "title": "TravelKang 究竟是什么，它是如何工作的？",
+        "description": "TravelKang 是专门为访问中国的国际旅行者设计的全面旅游服务。我们提供详细的PDF指南，包括支付设置（支付宝和微信支付）和城市旅游攻略，以及24/7 AI驱动的聊天机器人，即时回答您的旅游问题。"
+      },
+      {
+        "title": "使用 TravelKang 需要会说中文吗？",
+        "description": "不需要！我们所有的指南都提供多种语言，我们的AI聊天机器人也支持多种语言。您可以用英语、中文和其他语言获得帮助。"
+      },
+      {
+        "title": "旅游指南涵盖哪些城市？",
+        "description": "我们的城市旅游指南涵盖所有主要中国城市，包括北京、上海、广州、深圳、成都、西安、杭州、南京、苏州等。我们根据旅行者需求定期添加新城市。"
+      },
+      {
+        "title": "购买后如何访问指南？",
+        "description": "购买后，您将立即从账户仪表板下载PDF指南。您可以将它们下载到手机、平板电脑或电脑，并随时离线访问。"
+      },
+      {
+        "title": "我可以问AI聊天机器人什么？",
+        "description": "您可以询问AI聊天机器人关于中国旅游的任何问题 - 交通、美食推荐、文化礼仪、签证问题、天气、景点、购物等。就像有一个知识渊博的本地向导24/7可用。"
+      },
+      {
+        "title": "我可以随时取消聊天机器人订阅吗？",
+        "description": "可以！聊天机器人访问是月度订阅，您可以随时取消。没有长期承诺或取消费用。您将继续访问直到当前计费周期结束。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "今天开始您的中国之旅",
+    "description": "获取您在中国精彩旅行所需的一切。",
+    "buttons": [
+      {
+        "title": "查看套餐",
+        "url": "/#pricing",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "了解更多",
+        "url": "/products",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "TravelKang",
+      "description": "您的中国旅游完整指南。支付指南、城市指南和24/7 AI旅游助手。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "TravelKang"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • TravelKang 保留所有权利。",
+    "nav": {
+      "items": [
+        {
+          "title": "关于",
+          "children": [
+            {
+              "title": "功能特点",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "目的地",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "定价",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "服务",
+          "children": [
+            {
+              "title": "PDF 指南",
+              "url": "/pdf-guides",
+              "target": "_self"
+            },
+            {
+              "title": "聊天机器人",
+              "url": "/chatbot",
+              "target": "_self"
+            },
+            {
+              "title": "产品",
+              "url": "/products",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "支持",
+          "children": [
+            {
+              "title": "常见问题",
+              "url": "/#faq",
+              "target": "_self"
+            },
+            {
+              "title": "联系我们",
+              "url": "mailto:support@travelkang.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/travelkang",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "mailto:support@travelkang.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

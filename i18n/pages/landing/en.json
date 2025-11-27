@@ -1,0 +1,666 @@
+{
+  "template": "travelkang-template",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "TravelKang",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "TravelKang"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Features",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "Pricing",
+          "url": "/#pricing",
+          "icon": "MdPayment"
+        },
+        {
+          "title": "Services",
+          "url": "/products",
+          "icon": "BiCube"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Get Started",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Your Complete Guide to Traveling in China",
+    "highlight_text": "TravelKang",
+    "description": "TravelKang helps international travelers explore China with confidence.<br/>Get payment guides, city travel guides, and 24/7 AI travel assistance.",
+    "announcement": {
+      "label": "2025",
+      "title": "🎉 Welcome to China",
+      "url": "/#pricing"
+    },
+    "tip": "🎁 Special launch offer - Limited time",
+    "buttons": [
+      {
+        "title": "Get Started",
+        "icon": "RiFlashlightFill",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "View Services",
+        "icon": "RiMapPinLine",
+        "url": "/products",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "Trusted by travelers worldwide",
+    "items": [
+      {
+        "title": "Secure Payments",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Secure Payments"
+        }
+      },
+      {
+        "title": "24/7 Support",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "24/7 Support"
+        }
+      },
+      {
+        "title": "Expert Guides",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "Expert Guides"
+        }
+      },
+      {
+        "title": "AI Assistant",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "AI Assistant"
+        }
+      },
+      {
+        "title": "Multi-language",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Multi-language"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "What is TravelKang",
+    "label": "Introduce",
+    "description": "TravelKang is your comprehensive travel companion for exploring China. We provide detailed guides and AI-powered assistance to make your journey smooth and enjoyable.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "Payment Setup Guides",
+        "description": "Step-by-step guides to set up Alipay and WeChat Pay, making payments in China effortless.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "City Travel Guides",
+        "description": "Comprehensive travel guides for major Chinese cities with insider tips and recommendations.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "AI Travel Assistant",
+        "description": "Get instant answers to your travel questions with our 24/7 AI-powered chatbot.",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Choose TravelKang",
+    "label": "Benefits",
+    "description": "Everything you need for a smooth and enjoyable trip to China - from payment setup to local insights.",
+    "items": [
+      {
+        "title": "Easy Payment Setup",
+        "description": "Detailed guides help you set up Alipay and WeChat Pay quickly, so you can pay like a local.",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "Comprehensive City Guides",
+        "description": "Get insider knowledge about major cities - attractions, food, transportation, and cultural tips.",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "24/7 AI Support",
+        "description": "Ask any question about traveling in China and get instant, accurate answers anytime, anywhere.",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How TravelKang Works",
+    "description": "Start your China adventure in three simple steps:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Choose Your Package",
+        "description": "Select the PDF guides bundle, chatbot access, or premium package that fits your needs.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "Download Guides",
+        "description": "Get instant access to payment setup guides and comprehensive city travel guides.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "Ask Questions Anytime",
+        "description": "Use our AI travel assistant to get answers about transportation, food, culture, and more.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "Enjoy Your Trip",
+        "description": "Travel confidently with all the information and support you need at your fingertips.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Key Features of TravelKang",
+    "description": "Everything you need to explore China with confidence and ease.",
+    "items": [
+      {
+        "title": "Payment Setup Guides",
+        "description": "Detailed PDF guides showing you exactly how to set up Alipay and WeChat Pay step by step.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "City Travel Guides",
+        "description": "Comprehensive guides covering major cities with attractions, food recommendations, and local tips.",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "AI Travel Assistant",
+        "description": "24/7 chatbot that answers your questions about transportation, culture, food, and more.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "Multi-language Support",
+        "description": "Available in multiple languages to serve travelers from around the world.",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "Regular Updates",
+        "description": "Our guides are regularly updated with the latest information and travel tips.",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "Mobile Friendly",
+        "description": "Access guides and chatbot from any device, anywhere you go in China.",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Popular Destinations We Cover",
+    "description": "Explore China's most amazing cities with our detailed guides.",
+    "items": [
+      {
+        "title": "Beijing",
+        "description": "Capital City Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "Shanghai",
+        "description": "Modern Metropolis Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "Guangzhou",
+        "description": "Southern Pearl Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "Shenzhen",
+        "description": "Tech Hub Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "Chengdu",
+        "description": "Panda City Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "Xi'an",
+        "description": "Ancient Capital Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/4.png"
+        }
+      },
+      {
+        "title": "Hangzhou",
+        "description": "Paradise City Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/6.png"
+        }
+      },
+      {
+        "title": "Nanjing",
+        "description": "Historic City Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/8.png"
+        }
+      },
+      {
+        "title": "Suzhou",
+        "description": "Garden City Guide",
+        "url": "/products",
+        "target": "_self",
+        "image": {
+          "src": "/imgs/showcases/9.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Stats",
+    "title": "Travelers Love TravelKang",
+    "description": "for making China travel easy and enjoyable.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Trusted by",
+        "label": "10K+",
+        "description": "Travelers"
+      },
+      {
+        "title": "Covering",
+        "label": "50+",
+        "description": "Cities"
+      },
+      {
+        "title": "Available in",
+        "label": "10+",
+        "description": "Languages"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Choose Your Travel Package",
+    "description": "Select the perfect package for your China travel needs.",
+    "groups": [],
+    "items": [
+      {
+        "title": "PDF Guides Bundle",
+        "description": "Get both payment setup guide and city travel guides",
+        "features_title": "Includes",
+        "features": [
+          "Payment Setup Guide (Alipay & WeChat Pay)",
+          "City Travel Guides (All Major Cities)",
+          "Lifetime access to updates",
+          "Mobile-friendly PDF format",
+          "Download anytime, anywhere"
+        ],
+        "interval": "one-time",
+        "amount": 2900,
+        "cn_amount": 19900,
+        "currency": "USD",
+        "price": "$29",
+        "unit": "",
+        "is_featured": false,
+        "tip": "One-time payment, lifetime access",
+        "button": {
+          "title": "Buy PDF Bundle",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "pdf_bundle",
+        "product_name": "TravelKang PDF Guides Bundle",
+        "credits": 0,
+        "valid_months": 12
+      },
+      {
+        "title": "Chatbot Access",
+        "description": "Unlimited access to travel assistant chatbot",
+        "label": "Popular",
+        "features_title": "Includes",
+        "features": [
+          "24/7 Travel Assistant",
+          "Instant Answers to Travel Questions",
+          "Personalized Travel Recommendations",
+          "Multi-language Support",
+          "Cancel anytime"
+        ],
+        "interval": "month",
+        "amount": 1900,
+        "cn_amount": 12900,
+        "currency": "USD",
+        "price": "$19",
+        "unit": "/month",
+        "is_featured": true,
+        "tip": "Monthly subscription, cancel anytime",
+        "button": {
+          "title": "Buy Chatbot Access",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "chatbot_access",
+        "product_name": "TravelKang Chatbot Access",
+        "credits": 0,
+        "valid_months": 1
+      },
+      {
+        "title": "Premium Package",
+        "description": "Everything included: PDF guides + chatbot access",
+        "features_title": "Includes",
+        "features": [
+          "All PDF Guides (Payment + Cities)",
+          "1 Month Chatbot Access",
+          "Priority Support",
+          "Early access to new guides",
+          "Best value - Save $9"
+        ],
+        "interval": "one-time",
+        "amount": 3900,
+        "cn_amount": 29900,
+        "currency": "USD",
+        "price": "$39",
+        "unit": "",
+        "is_featured": false,
+        "tip": "Best value - Save $9",
+        "button": {
+          "title": "Buy Premium Package",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "TravelKang Premium Package",
+        "credits": 0,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonial",
+    "title": "What Travelers Say About TravelKang",
+    "description": "Hear from international travelers who explored China with TravelKang.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Sarah Johnson",
+        "label": "Traveler from USA",
+        "description": "TravelKang's payment guide was a lifesaver! I set up Alipay in minutes and could pay everywhere. The city guides helped me discover hidden gems in Beijing I never would have found otherwise.",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Michael Chen",
+        "label": "Traveler from Australia",
+        "description": "The AI chatbot answered all my questions instantly - from train schedules to restaurant recommendations. It felt like having a local guide in my pocket 24/7!",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Emma Williams",
+        "label": "Traveler from UK",
+        "description": "As a solo female traveler, I was nervous about visiting China. TravelKang's comprehensive guides gave me the confidence to explore independently. Highly recommend!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "David Kim",
+        "label": "Traveler from Canada",
+        "description": "The city guides are incredibly detailed - they cover everything from must-see attractions to local food recommendations. Worth every penny!",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "Lisa Anderson",
+        "label": "Traveler from Germany",
+        "description": "TravelKang made my 3-week trip to China so much easier. The payment setup was straightforward, and the chatbot helped me navigate transportation systems effortlessly.",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "James Taylor",
+        "label": "Traveler from France",
+        "description": "Best travel investment I made! The guides are well-written and up-to-date. The AI assistant saved me hours of research time. Perfect for first-time visitors to China.",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions About TravelKang",
+    "description": "Have another question? Contact us by email.",
+    "items": [
+      {
+        "title": "What exactly is TravelKang and how does it work?",
+        "description": "TravelKang is a comprehensive travel service designed specifically for international travelers visiting China. We provide detailed PDF guides for payment setup (Alipay and WeChat Pay) and city travel guides, plus a 24/7 AI-powered chatbot that answers your travel questions instantly."
+      },
+      {
+        "title": "Do I need to speak Chinese to use TravelKang?",
+        "description": "No! All our guides are available in multiple languages, and our AI chatbot supports multiple languages as well. You can get help in English, Chinese, and other languages."
+      },
+      {
+        "title": "What cities are covered in the travel guides?",
+        "description": "Our city travel guides cover all major Chinese cities including Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, Nanjing, Suzhou, and many more. We regularly add new cities based on traveler demand."
+      },
+      {
+        "title": "How do I access the guides after purchasing?",
+        "description": "After purchasing, you'll receive instant access to download the PDF guides from your account dashboard. You can download them to your phone, tablet, or computer and access them offline anytime."
+      },
+      {
+        "title": "What can I ask the AI chatbot?",
+        "description": "You can ask the AI chatbot anything about traveling in China - transportation, food recommendations, cultural etiquette, visa questions, weather, attractions, shopping, and more. It's like having a knowledgeable local guide available 24/7."
+      },
+      {
+        "title": "Can I cancel my chatbot subscription anytime?",
+        "description": "Yes! The chatbot access is a monthly subscription that you can cancel anytime. There are no long-term commitments or cancellation fees. You'll continue to have access until the end of your current billing period."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Start Your China Adventure Today",
+    "description": "Get everything you need for an amazing trip to China.",
+    "buttons": [
+      {
+        "title": "View Packages",
+        "url": "/#pricing",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "Learn More",
+        "url": "/products",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "TravelKang",
+      "description": "Your complete guide to traveling in China. Payment guides, city guides, and 24/7 AI travel assistance.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "TravelKang"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • TravelKang All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "About",
+          "children": [
+            {
+              "title": "Features",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "Destinations",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Services",
+          "children": [
+            {
+              "title": "PDF Guides",
+              "url": "/pdf-guides",
+              "target": "_self"
+            },
+            {
+              "title": "Chatbot",
+              "url": "/chatbot",
+              "target": "_self"
+            },
+            {
+              "title": "Products",
+              "url": "/products",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Support",
+          "children": [
+            {
+              "title": "FAQ",
+              "url": "/#faq",
+              "target": "_self"
+            },
+            {
+              "title": "Contact",
+              "url": "mailto:support@travelkang.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/travelkang",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@travelkang.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}
