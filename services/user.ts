@@ -52,7 +52,7 @@ export async function getUserUuid() {
   const session = await auth();
   if (session && session.user && session.user.email) {
     const dbUser = await findUserByEmail(session.user.email);
-    if (dbUser) {
+    if (dbUser && dbUser.uuid) {
       user_uuid = dbUser.uuid;
     }
   }
