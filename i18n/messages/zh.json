@@ -137,6 +137,10 @@
       "downloading": "下载中...",
       "download_success": "下载已开始",
       "error": "下载PDF失败，请重试",
+      "download": "下载",
+      "preview": "预览",
+      "close": "关闭",
+      "no_pdfs": "暂无可用PDF",
       "payment_guide": {
         "title": "支付设置指南",
         "description": "为国际游客提供的支付宝和微信支付完整设置指南",
@@ -156,6 +160,11 @@
       "thinking": "思考中...",
       "error": "抱歉，出现了错误。请重试。",
       "no_access": "请购买访问权限以使用聊天机器人",
+      "purchase_required": "请购买聊天机器人访问权限以使用此功能",
+      "upgrade_required": "您需要升级以访问聊天机器人。请购买完整套餐。",
+      "upgrade_message": "您需要升级以访问聊天机器人。请购买完整套餐。",
+      "purchase_message": "请购买聊天机器人访问权限以使用此功能。",
+      "upgrade": "升级",
       "buy_access": "购买访问权限"
     },
     "products": {
