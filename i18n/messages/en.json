@@ -127,5 +127,78 @@
     "contact_tip": "Other ways to contact us",
     "rating_tip": "How do you feel about ShipAny?",
     "placeholder": "Leave your words here..."
+  },
+  "travel": {
+    "title": "Travel Services",
+    "pdf_guides": {
+      "title": "PDF Guides",
+      "description": "Download comprehensive guides to help you travel in China",
+      "downloading": "Downloading...",
+      "download_success": "Download started",
+      "error": "Failed to download PDF, please try again",
+      "download": "Download",
+      "preview": "Preview",
+      "close": "Close",
+      "no_pdfs": "No PDFs available",
+      "payment_guide": {
+        "title": "Payment Setup Guide",
+        "description": "Complete setup guide for Alipay and WeChat Pay for international tourists",
+        "download": "Download Payment Guide"
+      },
+      "city_guide": {
+        "title": "City Travel Guides",
+        "description": "Detailed travel guides for major Chinese cities",
+        "download": "Download City Guide"
+      }
+    },
+    "chatbot": {
+      "title": "Travel Assistant Chatbot",
+      "description": "Get instant answers to your questions about traveling in China",
+      "placeholder": "Ask me anything about traveling in China...",
+      "send": "Send",
+      "thinking": "Thinking...",
+      "error": "Sorry, an error occurred. Please try again.",
+      "no_access": "Please purchase access to use the chatbot",
+      "purchase_required": "Please purchase chatbot access to use this feature",
+      "upgrade_required": "You need to upgrade to access the chatbot. Please purchase the complete package.",
+      "upgrade_message": "You need to upgrade to access the chatbot. Please purchase the complete package.",
+      "purchase_message": "Please purchase chatbot access to use this feature.",
+      "upgrade": "Upgrade",
+      "buy_access": "Purchase Access"
+    },
+    "products": {
+      "title": "Travel Services",
+      "description": "Choose the perfect package for your China travel needs",
+      "includes": "Includes",
+      "pdf_bundle": {
+        "title": "PDF Guide Bundle",
+        "description": "Get payment setup guide and city travel guides",
+        "price": "$29",
+        "buy": "Buy PDF Bundle",
+        "tip": "One-time payment, lifetime access",
+        "feature1": "Payment Setup Guide (Alipay & WeChat Pay)",
+        "feature2": "City Travel Guides (All Major Cities)"
+      },
+      "chatbot_access": {
+        "title": "Chatbot Access",
+        "description": "Unlimited access to travel assistant chatbot",
+        "price": "$19",
+        "buy": "Buy Chatbot Access",
+        "tip": "Monthly subscription, cancel anytime",
+        "feature1": "24/7 Travel Assistant",
+        "feature2": "Instant Answers to Travel Questions",
+        "feature3": "Personalized Travel Recommendations"
+      },
+      "premium": {
+        "title": "Premium Package",
+        "description": "Everything included: PDF Guides + Chatbot Access",
+        "price": "$39",
+        "buy": "Buy Premium Package",
+        "tip": "Best Value - Save $9",
+        "feature1": "All PDF Guides (Payment + Cities)",
+        "feature2": "1 Month Chatbot Access",
+        "feature3": "Priority Support"
+      }
+    }
   }
 }
