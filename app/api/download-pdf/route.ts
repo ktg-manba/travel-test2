@@ -1,21 +1,32 @@
 import { getUserUuid } from "@/services/user";
 import { getOrdersByUserUuid } from "@/models/order";
 import { respData, respErr } from "@/lib/resp";
+import { getAllPDFDownloads, findPDFDownloadByUuid, findPDFDownloadById } from "@/models/pdf";
 
 // 定义产品ID常量
 const PRODUCT_IDS = {
   PDF_BUNDLE: "pdf_bundle",
   PREMIUM: "premium",
-  PAYMENT_GUIDE: "payment_guide",
-  CITY_GUIDE: "city_guide",
 };
 
+// GET: 获取所有可用的 PDF 列表
+export async function GET() {
+  try {
+    const pdfs = await getAllPDFDownloads();
+    return respData(pdfs);
+  } catch (e: any) {
+    console.log("get pdfs failed: ", e);
+    return respErr("get pdfs failed: " + e.message);
+  }
+}
+
+// POST: 下载指定的 PDF
 export async function POST(req: Request) {
   try {
-    const { pdf_type } = await req.json(); // pdf_type: "payment_guide" | "city_guide"
+    const { pdf_uuid, pdf_id } = await req.json();
 
-    if (!pdf_type || !["payment_guide", "city_guide"].includes(pdf_type)) {
-      return respErr("invalid pdf_type");
+    if (!pdf_uuid && !pdf_id) {
+      return respErr("pdf_uuid or pdf_id is required");
     }
 
     const user_uuid = await getUserUuid();
@@ -34,9 +45,7 @@ export async function POST(req: Request) {
       const productId = order.product_id;
       return (
         productId === PRODUCT_IDS.PDF_BUNDLE ||
-        productId === PRODUCT_IDS.PREMIUM ||
-        (pdf_type === "payment_guide" && productId === PRODUCT_IDS.PAYMENT_GUIDE) ||
-        (pdf_type === "city_guide" && productId === PRODUCT_IDS.CITY_GUIDE)
+        productId === PRODUCT_IDS.PREMIUM
       );
     });
 
@@ -44,22 +53,31 @@ export async function POST(req: Request) {
       return respErr("no access, please purchase PDF bundle or premium package");
     }
 
-    // 这里应该返回PDF文件的URL或直接返回文件
-    // 实际实现中，PDF文件应该存储在云存储中（如S3、Supabase Storage等）
-    // 这里返回一个示例URL，实际使用时需要替换为真实的PDF文件路径
-    const pdfUrls: Record<string, string> = {
-      payment_guide: "/pdfs/payment-guide.pdf", // 需要替换为实际PDF路径
-      city_guide: "/pdfs/city-guide.pdf", // 需要替换为实际PDF路径
-    };
+    // 查找 PDF
+    let pdf = null;
+    if (pdf_uuid) {
+      pdf = await findPDFDownloadByUuid(pdf_uuid);
+    } else if (pdf_id) {
+      pdf = await findPDFDownloadById(Number(pdf_id));
+    }
+
+    if (!pdf) {
+      return respErr("pdf not found");
+    }
+
+    // 确保 file_url 是完整的 URL 或正确的路径
+    let fileUrl = pdf.file_url;
+    if (fileUrl && !fileUrl.startsWith("http") && !fileUrl.startsWith("/")) {
+      fileUrl = "/" + fileUrl;
+    }
 
     return respData({
-      pdf_url: pdfUrls[pdf_type],
-      download_url: pdfUrls[pdf_type],
+      pdf_url: fileUrl,
+      download_url: fileUrl,
+      file_name: pdf.file_name,
     });
   } catch (e: any) {
     console.log("download pdf failed: ", e);
     return respErr("download pdf failed: " + e.message);
   }
 }
-
-
