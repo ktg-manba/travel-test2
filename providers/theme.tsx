@@ -16,14 +16,15 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   useEffect(() => {
     const themeInCache = cacheGet(CacheKey.Theme);
     if (themeInCache) {
-      // theme setted
-      if (["dark", "light"].includes(themeInCache)) {
-        setTheme(themeInCache);
+      // theme setted - trim whitespace and newlines
+      const cleanedTheme = themeInCache.trim();
+      if (["dark", "light"].includes(cleanedTheme)) {
+        setTheme(cleanedTheme);
         return;
       }
     } else {
-      // theme not set
-      const defaultTheme = process.env.NEXT_PUBLIC_DEFAULT_THEME;
+      // theme not set - trim whitespace and newlines from env var
+      const defaultTheme = process.env.NEXT_PUBLIC_DEFAULT_THEME?.trim();
       if (defaultTheme && ["dark", "light"].includes(defaultTheme)) {
         setTheme(defaultTheme);
         return;
@@ -43,8 +44,12 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
     };
   }, []);
 
+  // Ensure theme value is cleaned before passing to NextThemesProvider
+  const cleanedTheme = theme?.trim() || undefined;
+  const validTheme = cleanedTheme && ["dark", "light"].includes(cleanedTheme) ? cleanedTheme : undefined;
+
   return (
-    <NextThemesProvider forcedTheme={theme} {...props}>
+    <NextThemesProvider forcedTheme={validTheme} {...props}>
       {children}
 
       <Toaster position="top-center" richColors />

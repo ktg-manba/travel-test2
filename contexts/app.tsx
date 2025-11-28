@@ -23,7 +23,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   const { data: session } = useSession();
   
   const [theme, setTheme] = useState<string>(() => {
-    return process.env.NEXT_PUBLIC_DEFAULT_THEME || "";
+    return process.env.NEXT_PUBLIC_DEFAULT_THEME?.trim() || "";
   });
 
   const [showSignModal, setShowSignModal] = useState<boolean>(false);
