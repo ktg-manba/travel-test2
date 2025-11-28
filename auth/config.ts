@@ -189,6 +189,7 @@ export const providerMap = providers
 
 export const authOptions: NextAuthConfig = {
   providers,
+  secret: process.env.AUTH_SECRET, // Required for production
   pages: {
     signIn: "/auth/signin",
   },

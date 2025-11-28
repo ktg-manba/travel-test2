@@ -25,13 +25,10 @@ export async function POST(req: Request) {
       return respErr("user not exist");
     }
 
-    if (!user.uuid) {
-      console.log("User uuid is missing");
-      return respErr("user uuid not found");
-    }
-
     console.log("User found:", { uuid: user.uuid, email: user.email });
-    user.credits = await getUserCredits(user.uuid);
+    if (user.uuid) {
+      user.credits = await getUserCredits(user.uuid);
+    }
 
     return respData(user);
   } catch (e) {

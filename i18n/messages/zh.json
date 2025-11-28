@@ -92,20 +92,6 @@
     "description": "关于 TravelKang 的新闻、资源和更新",
     "read_more_text": "阅读更多"
   },
-  "payment": {
-    "success": {
-      "title": "支付成功",
-      "description": "您的支付已成功处理"
-    },
-    "failed": {
-      "title": "支付失败",
-      "description": "您的支付无法处理"
-    },
-    "processing": {
-      "title": "处理支付中",
-      "description": "请稍候，我们正在处理您的支付"
-    }
-  },
   "my_invites": {
     "title": "我的邀请",
     "description": "查看您的邀请记录",
@@ -149,13 +135,8 @@
       "title": "PDF 指南",
       "description": "下载全面的指南，帮助您在中国旅游",
       "downloading": "下载中...",
-      "download": "下载",
       "download_success": "下载已开始",
       "error": "下载PDF失败，请重试",
-      "preview": "预览",
-      "no_pdfs": "暂无PDF文件",
-      "no_description": "暂无描述",
-      "to_download": "以下载",
       "payment_guide": {
         "title": "支付设置指南",
         "description": "为国际游客提供的支付宝和微信支付完整设置指南",
@@ -175,12 +156,7 @@
       "thinking": "思考中...",
       "error": "抱歉，出现了错误。请重试。",
       "no_access": "请购买访问权限以使用聊天机器人",
-      "buy_access": "购买访问权限",
-      "purchase_required": "请购买完整套餐以使用聊天机器人",
-      "purchase_message": "您需要购买完整套餐才能使用聊天机器人功能",
-      "upgrade_required": "请升级到完整套餐以使用聊天机器人",
-      "upgrade_message": "您已购买基础套餐，请升级到完整套餐以使用聊天机器人功能",
-      "upgrade": "升级套餐"
+      "buy_access": "购买访问权限"
     },
     "products": {
       "title": "旅游服务",

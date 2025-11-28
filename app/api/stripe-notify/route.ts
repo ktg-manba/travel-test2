@@ -1,11 +1,5 @@
 import Stripe from "stripe";
-import {
-  handleOrderSession,
-  handleSubscriptionDeleted,
-  handleSubscriptionUpdated,
-  handleInvoicePaymentSucceeded,
-  handleInvoicePaymentFailed,
-} from "@/services/order";
+import { handleOrderSession } from "@/services/order";
 import { respOk } from "@/lib/resp";
 
 export async function POST(req: Request) {
@@ -31,41 +25,18 @@ export async function POST(req: Request) {
       stripeWebhookSecret
     );
 
-    console.log("stripe notify event: ", event.type, event.id);
+    console.log("stripe notify event: ", event);
 
     switch (event.type) {
       case "checkout.session.completed": {
-        const session = event.data.object as Stripe.Checkout.Session;
+        const session = event.data.object;
+
         await handleOrderSession(session);
         break;
       }
 
-      case "customer.subscription.deleted": {
-        const subscription = event.data.object as Stripe.Subscription;
-        await handleSubscriptionDeleted(subscription);
-        break;
-      }
-
-      case "customer.subscription.updated": {
-        const subscription = event.data.object as Stripe.Subscription;
-        await handleSubscriptionUpdated(subscription);
-        break;
-      }
-
-      case "invoice.payment_succeeded": {
-        const invoice = event.data.object as Stripe.Invoice;
-        await handleInvoicePaymentSucceeded(invoice);
-        break;
-      }
-
-      case "invoice.payment_failed": {
-        const invoice = event.data.object as Stripe.Invoice;
-        await handleInvoicePaymentFailed(invoice);
-        break;
-      }
-
       default:
-        console.log("unhandled event type: ", event.type);
+        console.log("not handle event: ", event.type);
     }
 
     return respOk();

@@ -190,31 +190,3 @@ CREATE TRIGGER update_posts_updated_at
     FOR EACH ROW
     EXECUTE FUNCTION update_updated_at_column();
 
--- ============================================
--- 8. PDF下载表 (pdf_downloads)
--- ============================================
-CREATE TABLE IF NOT EXISTS pdf_downloads (
-    id BIGSERIAL PRIMARY KEY,
-    uuid VARCHAR(255) UNIQUE NOT NULL,
-    file_name VARCHAR(255) NOT NULL,
-    file_url TEXT NOT NULL,
-    description TEXT DEFAULT '',
-    cover_image_url TEXT DEFAULT '',
-    status VARCHAR(50) DEFAULT 'active',
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ DEFAULT NOW(),
-    sort_order INT DEFAULT 0
-);
-
-CREATE INDEX IF NOT EXISTS idx_pdf_downloads_uuid ON pdf_downloads(uuid);
-CREATE INDEX IF NOT EXISTS idx_pdf_downloads_status ON pdf_downloads(status);
-CREATE INDEX IF NOT EXISTS idx_pdf_downloads_created_at ON pdf_downloads(created_at DESC);
-CREATE INDEX IF NOT EXISTS idx_pdf_downloads_sort_order ON pdf_downloads(sort_order);
-
--- 为pdf_downloads表添加更新时间触发器
-DROP TRIGGER IF EXISTS update_pdf_downloads_updated_at ON pdf_downloads;
-CREATE TRIGGER update_pdf_downloads_updated_at
-    BEFORE UPDATE ON pdf_downloads
-    FOR EACH ROW
-    EXECUTE FUNCTION update_updated_at_column();
-

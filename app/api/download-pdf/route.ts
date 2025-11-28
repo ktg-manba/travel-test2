@@ -1,6 +1,5 @@
 import { getUserUuid } from "@/services/user";
 import { getOrdersByUserUuid } from "@/models/order";
-import { findPDFDownloadByUuid, getAllPDFDownloads } from "@/models/pdf";
 import { respData, respErr } from "@/lib/resp";
 
 // 定义产品ID常量
@@ -11,24 +10,12 @@ const PRODUCT_IDS = {
   CITY_GUIDE: "city_guide",
 };
 
-// 获取所有PDF列表（不需要登录）
-export async function GET(req: Request) {
-  try {
-    const pdfs = await getAllPDFDownloads();
-    return respData({ pdfs });
-  } catch (e: any) {
-    console.log("get pdfs failed: ", e);
-    return respErr("get pdfs failed: " + e.message);
-  }
-}
-
-// 下载PDF（需要登录和购买权限）
 export async function POST(req: Request) {
   try {
-    const { pdf_uuid } = await req.json();
+    const { pdf_type } = await req.json(); // pdf_type: "payment_guide" | "city_guide"
 
-    if (!pdf_uuid) {
-      return respErr("pdf_uuid is required");
+    if (!pdf_type || !["payment_guide", "city_guide"].includes(pdf_type)) {
+      return respErr("invalid pdf_type");
     }
 
     const user_uuid = await getUserUuid();
@@ -47,7 +34,9 @@ export async function POST(req: Request) {
       const productId = order.product_id;
       return (
         productId === PRODUCT_IDS.PDF_BUNDLE ||
-        productId === PRODUCT_IDS.PREMIUM
+        productId === PRODUCT_IDS.PREMIUM ||
+        (pdf_type === "payment_guide" && productId === PRODUCT_IDS.PAYMENT_GUIDE) ||
+        (pdf_type === "city_guide" && productId === PRODUCT_IDS.CITY_GUIDE)
       );
     });
 
@@ -55,23 +44,17 @@ export async function POST(req: Request) {
       return respErr("no access, please purchase PDF bundle or premium package");
     }
 
-    // 从数据库获取PDF信息 - 支持通过uuid或id查询
-    let pdf = await findPDFDownloadByUuid(pdf_uuid);
-    
-    // 如果通过uuid找不到，尝试通过id查找
-    if (!pdf && !isNaN(Number(pdf_uuid))) {
-      const allPdfs = await getAllPDFDownloads();
-      pdf = allPdfs.find(p => p.id?.toString() === pdf_uuid);
-    }
-    
-    if (!pdf) {
-      return respErr("PDF not found");
-    }
+    // 这里应该返回PDF文件的URL或直接返回文件
+    // 实际实现中，PDF文件应该存储在云存储中（如S3、Supabase Storage等）
+    // 这里返回一个示例URL，实际使用时需要替换为真实的PDF文件路径
+    const pdfUrls: Record<string, string> = {
+      payment_guide: "/pdfs/payment-guide.pdf", // 需要替换为实际PDF路径
+      city_guide: "/pdfs/city-guide.pdf", // 需要替换为实际PDF路径
+    };
 
     return respData({
-      pdf_url: pdf.file_url,
-      download_url: pdf.file_url,
-      file_name: pdf.file_name,
+      pdf_url: pdfUrls[pdf_type],
+      download_url: pdfUrls[pdf_type],
     });
   } catch (e: any) {
     console.log("download pdf failed: ", e);

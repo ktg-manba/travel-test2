@@ -16,14 +16,11 @@ export const supabaseBrowserClient = createBrowserClient(
 );
 
 export async function createClient() {
-  if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error(
-      "Missing Supabase environment variables. Please set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in your .env.local file."
-    );
-  }
-  
   const cookieStore = await cookies();
-  return createServerClient(supabaseUrl, supabaseAnonKey, {
+  if (!supabaseUrl || !supabaseAnonKey) {
+    throw new Error("Supabase URL or key is not set");
+  }
+  return createServerClient(supabaseUrl as string, supabaseAnonKey as string, {
     cookies: {
       getAll() {
         return cookieStore.getAll();

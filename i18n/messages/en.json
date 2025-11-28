@@ -91,20 +91,6 @@
     "description": "News, resources, and updates about ShipAny",
     "read_more_text": "Read More"
   },
-  "payment": {
-    "success": {
-      "title": "Payment Successful",
-      "description": "Your payment has been processed successfully"
-    },
-    "failed": {
-      "title": "Payment Failed",
-      "description": "Your payment could not be processed"
-    },
-    "processing": {
-      "title": "Processing Payment",
-      "description": "Please wait while we process your payment"
-    }
-  },
   "my_invites": {
     "title": "My Invites",
     "description": "View your invite records",
@@ -141,44 +127,5 @@
     "contact_tip": "Other ways to contact us",
     "rating_tip": "How do you feel about ShipAny?",
     "placeholder": "Leave your words here..."
-  },
-  "travel": {
-    "pdf_guides": {
-      "title": "PDF Guides",
-      "description": "Download comprehensive guides to help you travel in China",
-      "downloading": "Downloading...",
-      "download": "Download",
-      "download_success": "Download started",
-      "error": "Failed to download PDF, please try again",
-      "preview": "Preview",
-      "no_pdfs": "No PDFs available",
-      "no_description": "No description",
-      "to_download": "to download",
-      "payment_guide": {
-        "title": "Payment Setup Guide",
-        "description": "Complete guide for overseas tourists to set up Alipay and WeChat Pay",
-        "download": "Download Payment Guide"
-      },
-      "city_guide": {
-        "title": "City Travel Guides",
-        "description": "Detailed travel guides for major Chinese cities",
-        "download": "Download City Guide"
-      }
-    },
-    "chatbot": {
-      "title": "Travel Assistant Chatbot",
-      "description": "Get instant answers to your questions about traveling in China",
-      "placeholder": "Ask me anything about traveling in China...",
-      "send": "Send",
-      "thinking": "Thinking...",
-      "error": "Sorry, an error occurred. Please try again.",
-      "no_access": "Please purchase access to use the chatbot",
-      "buy_access": "Buy Access",
-      "purchase_required": "Please purchase the complete package to use the chatbot",
-      "purchase_message": "You need to purchase the complete package to use the chatbot feature",
-      "upgrade_required": "Please upgrade to the complete package to use the chatbot",
-      "upgrade_message": "You have purchased the essential guide. Please upgrade to the complete package to use the chatbot feature",
-      "upgrade": "Upgrade Package"
-    }
   }
 }

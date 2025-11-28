@@ -1,7 +1,6 @@
 import { getUserEmail, getUserUuid } from "@/services/user";
 import { insertOrder, updateOrderSession } from "@/models/order";
 import { respData, respErr } from "@/lib/resp";
-import { getSupabaseClient } from "@/models/db";
 
 import { Order } from "@/types/order";
 import Stripe from "stripe";
@@ -163,9 +162,6 @@ export async function POST(req: Request) {
 
     const stripe_session_id = session.id;
     await updateOrderSession(order_no, stripe_session_id, order_detail);
-
-    // If subscription, save subscription ID after payment (will be updated via webhook)
-    // Note: subscription ID is only after payment, so we'll update it in handleOrderSession
 
     return respData({
       public_key: process.env.STRIPE_PUBLIC_KEY,
